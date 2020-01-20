@@ -1,0 +1,6 @@
+msg.payload= {
+    "pressure":Math.floor((Math.random() * 10) + 1),
+    "unit": "bar"
+}
+
+return msg;
