@@ -1,0 +1,11 @@
+if(msg.payload){
+    msg.payload= {
+    "isAlarm":msg.payload,
+    "state":{"ttl":22},
+    "location":"TSE03"
+}} else {
+    msg.payload= {
+    "isAlarm":msg.payload}
+}
+
+return msg;
