@@ -1,0 +1,15 @@
+let alarm = context.get('alarm') || false
+let alarmcnt = context.get('cnt') || 0
+
+if (msg.payload){
+    alarmcnt++
+}
+
+if (msg.payload && alarmcnt>1){
+    alarm = msg.payload
+    context.set('alarm', alarm)
+    msg.payload = alarm
+    return msg;
+}
+node.error(alarmcnt)
+context.set('cnt', alarmcnt)

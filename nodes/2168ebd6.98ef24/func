@@ -1,0 +1,5 @@
+let inp = msg.payload.msg;
+let buff = Buffer.from(inp, 'base64'); 
+let data = buff.readInt32BE();
+msg.payload = data
+return msg;

@@ -1,0 +1,8 @@
+var queue = context.get('queue')|| [];
+queue.push(msg.payload)
+if (queue.length > 10) {
+     var i = queue.shift();
+}
+context.set('queue', queue); // to store a variable
+msg.payload = queue;
+return msg;

@@ -507,6 +507,71 @@
      "file": "/Users/fip/.node-red/node_modules/node-red-contrib-azure-documentdb/azuredocumentdb.js"
     }
    }
+  },
+  "node-red-node-twilio": {
+   "name": "node-red-node-twilio",
+   "version": "0.1.0",
+   "local": true,
+   "nodes": {
+    "twilio": {
+     "name": "twilio",
+     "types": [
+      "twilio out",
+      "twilio-api"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-twilio",
+     "file": "/Users/fip/.node-red/node_modules/node-red-node-twilio/56-twilio.js"
+    }
+   }
+  },
+  "node-red-contrib-ttn": {
+   "name": "node-red-contrib-ttn",
+   "version": "2.0.5",
+   "local": true,
+   "nodes": {
+    "ttn-app": {
+     "name": "ttn-app",
+     "types": [
+      "ttn app"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-ttn",
+     "file": "/Users/fip/.node-red/node_modules/node-red-contrib-ttn/ttn-app/ttn-app.js"
+    },
+    "ttn-event": {
+     "name": "ttn-event",
+     "types": [
+      "ttn event"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-ttn",
+     "file": "/Users/fip/.node-red/node_modules/node-red-contrib-ttn/ttn-event/ttn-event.js"
+    },
+    "ttn-uplink": {
+     "name": "ttn-uplink",
+     "types": [
+      "ttn uplink"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-ttn",
+     "file": "/Users/fip/.node-red/node_modules/node-red-contrib-ttn/ttn-uplink/ttn-uplink.js"
+    },
+    "ttn-downlink": {
+     "name": "ttn-downlink",
+     "types": [
+      "ttn downlink"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-ttn",
+     "file": "/Users/fip/.node-red/node_modules/node-red-contrib-ttn/ttn-downlink/ttn-downlink.js"
+    }
+   }
   }
  },
  "_credentialSecret": "203cef9c7834371691ccb4bef75ce641afda1a8b5dcba4b9bd94b237f31ab181",

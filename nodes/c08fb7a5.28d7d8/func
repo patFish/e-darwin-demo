@@ -1,0 +1,16 @@
+let gradient = context.get('gradient') || []
+
+let inDat = msg.payload
+
+if (inDat.length===1){
+    gradient.push(inDat[0])
+} else {
+    for(let i =0;i<inDat.length-1; i++){
+        let cur = inDat[i]
+        let next = inDat[i+1]
+        gradient[i] = (cur-next)
+    }
+}
+context.set('gradient', gradient)
+msg.payload = gradient
+return msg;
